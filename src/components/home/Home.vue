@@ -24,9 +24,9 @@
                           <i :class="['iconfont',iconArr[i]]"></i>
                           <span>{{item.authName}}</span>
                       </template>
-                      <el-menu-item :index="lastItem.path" v-for="lastItem in item.children">
-                        <i class="el-icon-menu"></i>
-                        <span>{{lastItem.authName}}</span>
+                      <el-menu-item :index="'/'+lastItem.path" v-for="lastItem in item.children">
+                          <i class="el-icon-menu"></i>
+                          <span>{{lastItem.authName}}</span>
                       </el-menu-item>
                   </el-submenu>
               </el-menu>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/login'
+import Login from '../components/login'
 import Home from '../components/home/Home'
 import Welcome from '../components/home/Welcome'
 import Users from '../components/user/Users'
@@ -8,6 +8,10 @@ import Rights from '../components/authority/Rights'
 import Roles from '../components/authority/Roles'
 import Categories from '../components/goods/Categories'
 import Params from '../components/goods/Params'
+import Goods from '../components/goods/Goods'
+import GoodsAdd from '../components/goods/GoodsAdd'
+import Orders from '../components/orders/Orders'
+import Reports from '../components/reports/Reports'
 
 Vue.use(Router)
 const router = new Router({
@@ -28,7 +32,11 @@ const router = new Router({
         {path: '/rights', name: 'rights', component: Rights},
         {path: '/roles', name: 'roles', component: Roles},
         {path: '/categories', name: 'categories', component: Categories},
-        {path: '/params', name: 'params', component: Params}
+        {path: '/params', name: 'params', component: Params},
+        {path: '/goods', name: 'goods', component: Goods},
+        {path: '/goods/add', name: 'goodsadd', component: GoodsAdd},
+        {path: '/orders', name: 'orders', component: Orders},
+        {path: '/reports', name: 'reports', component: Reports}
       ]
     },
     {
